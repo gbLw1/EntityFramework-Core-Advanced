@@ -1,0 +1,59 @@
+dbug: 08/12/2021 15:23:44.512 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Cidade.EstadoId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 08/12/2021 15:23:44.512 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Endereco.ClienteId' was created in shadow state because there are no eligible CLR members with a matching name.
+info: 08/12/2021 15:23:44.681 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+dbug: 08/12/2021 15:23:44.758 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<Departamento>()
+          .Where(p => p.Id > 0)'
+dbug: 08/12/2021 15:23:44.945 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<Departamento>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.SelectExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Departamento.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Departamento.Ativo (bool) Required, 1], [Property: Departamento.Descricao (string), 2], [Property: Departamento.Excluido (bool) Required, 3] }
+              SELECT d.Id, d.Ativo, d.Descricao, d.Excluido
+              FROM Departamentos AS d
+              WHERE d.Id > 0), 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Departamento>, 
+          DominandoEFCore.Data.ApplicationContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 08/12/2021 15:23:45.020 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 08/12/2021 15:23:45.025 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (52ms).
+dbug: 08/12/2021 15:23:45.030 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'CursoEFCoreAvancado' on server 'DESKTOP-KJ50F3E\SQLEXPRESS'.
+dbug: 08/12/2021 15:23:46.019 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'CursoEFCoreAvancado' on server 'DESKTOP-KJ50F3E\SQLEXPRESS'.
+dbug: 08/12/2021 15:23:46.024 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [d].[Id], [d].[Ativo], [d].[Descricao], [d].[Excluido]
+      FROM [Departamentos] AS [d]
+      WHERE [d].[Id] > 0
+info: 08/12/2021 15:23:46.078 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [d].[Id], [d].[Ativo], [d].[Descricao], [d].[Excluido]
+      FROM [Departamentos] AS [d]
+      WHERE [d].[Id] > 0
+dbug: 08/12/2021 15:23:46.086 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 08/12/2021 15:23:46.088 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'CursoEFCoreAvancado' on server 'DESKTOP-KJ50F3E\SQLEXPRESS'.
+dbug: 08/12/2021 15:23:46.092 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'CursoEFCoreAvancado' on server 'DESKTOP-KJ50F3E\SQLEXPRESS'.
+dbug: 08/12/2021 15:23:46.093 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ApplicationContext' disposed.
+info: 08/12/2021 15:25:14.574 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: 08/12/2021 15:25:15.982 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [d].[Id], [d].[Ativo], [d].[Descricao], [d].[Excluido]
+      FROM [Departamentos] AS [d]
+      WHERE [d].[Id] > 0
