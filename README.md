@@ -1,4 +1,4 @@
-# Curso EntityFrameworkCore Avançado (Desenvolvedor.io)
+# EntityFrameworkCore Avançado (Desenvolvedor.io)
 
 ---
 
@@ -27,3 +27,9 @@
   dotnet add <project> package <nome do pacote>
   ```
   Caso queira uma versão específica, basta informar ``` --version ``` depois do nome do pacote
+
+---
+
+  Plataforma de aprendizagem : [desenvolvedor.io](https://desenvolvedor.io/cursos)  
+  Curso : [Dominando o Entity Framework Core](https://desenvolvedor.io/curso-online-dominando-o-entity-framework-core)  
+  Instrutor : [Rafael Almeida](https://desenvolvedor.io/instrutor/rafael-almeida)
